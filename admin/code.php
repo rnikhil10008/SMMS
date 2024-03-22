@@ -13,7 +13,7 @@ $phone =validate($_POST['phone']);
 if($name != '' && $email !='' && $password != ''){
 
 
-    $emailcheck = mysqli_query($con,"SELECT * FROM admins WHERE email= '$email'");
+    $emailcheck = mysqli_query($con,"SELECT * FROM employees WHERE email= '$email'");
     if($emailcheck){
         if(mysqli_num_rows($emailcheck)> 0){
             redirect('employee-create.php','Email Already used by another user.');
@@ -28,15 +28,15 @@ if($name != '' && $email !='' && $password != ''){
         'phone' => $phone,
         
         ];
-        $result=insert('admins',$data);
+        $result=insert('employees',$data);
         if($result){
             redirect('employee.php','Employee added Successfully!');
         }else{
-            redirect('employees-create.php', 'Somethings Went Wrong!');
+            redirect('employee-create.php', 'Somethings Went Wrong!');
         }
 
 }else{
-    redirect('admins-create.php','Please fill required fields.');}
+    redirect('employee-create.php','Please fill required fields.');}
 }
         
 ?>

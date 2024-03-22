@@ -12,12 +12,12 @@
         <div class="card-body">
         <?php alertMessage(); ?>
         <?php
-            $admins = getAll('admins');
+            $employees = getAll('employees');
 
-            if(!$admins){
+            if(!$employees){
                 echo '<h4>Something went wrong</h4>';
             }
-            if(mysqli_num_rows($admins)>0)
+            if(mysqli_num_rows($employees)>0)
             {
 
 
@@ -36,20 +36,20 @@
                         <tbody>
          
                 
-                                <?php foreach ($admins as $adminItem): ?>
+                                <?php foreach ($employees as $employeesItem): ?>
                                 <tr>
                                     <td>
-                                        <?= $adminItem['id'] ?>
+                                        <?= $emItem['id'] ?>
                                     </td>
                                     <td>
-                                        <?= $adminItem['name'] ?>
+                                        <?= $emItem['name'] ?>
                                     </td>
                                     <td>
-                                        <?= $adminItem['email'] ?>
+                                        <?= $emItem['email'] ?>
                                     </td>
                                     <td>
-                                        <a href="admins-edit.php" class="btn btn-success btn-sm">Edit</a>
-                                        <a href="adimns-delete.php" class="btn btn-danger btn-sm">Delete</a>
+                                        <a href="employee-edit.php" class="btn btn-success btn-sm">Edit</a>
+                                        <a href="employee-delete.php" class="btn btn-danger btn-sm">Delete</a>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>
