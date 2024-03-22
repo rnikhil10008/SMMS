@@ -5,7 +5,7 @@
         <div class="card-header">
 
             <h4 class="mb-0">Add Employee
-                <a href="admins.php" class="btn btn-primary float-end">Back</a>
+                <a href="employee.php" class="btn btn-primary float-end">Back</a>
             </h4>
         </div>
         <div class="card-body">

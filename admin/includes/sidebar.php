@@ -4,7 +4,7 @@
     <div class="sb-sidenav-menu">
         <div class="nav">
             <div class="sb-sidenav-menu-heading"></div>
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="dash.php">
                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                 Dashboard
             </a>
@@ -64,10 +64,10 @@
             </a>
             <div class="collapse" id="collapseAdmins" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                 <nav class="sb-sidenav-menu-nested nav">
-                    <a class="nav-link" href="admin-create.php">Add Employees</a>
-                    <a class="nav-link" href="admin.php"> Employees Attendence</a>
-                    <a class="nav-link" href="admin-create.php">Employees salary</a>
-                    <a class="nav-link" href="admin.php">View Employees</a>
+                    <a class="nav-link" href="employee-create.php">Add Employees</a>
+                    <a class="nav-link" href="eattend.php"> Employees Attendence</a>
+                    <a class="nav-link" href="esalary.php">Employees salary</a>
+                    <a class="nav-link" href="employee.php">View Employees</a>
                 </nav>
             </div>
 
